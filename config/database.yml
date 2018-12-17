@@ -16,16 +16,21 @@
 #
 default: &default
   adapter: postgresql
+  host: ec2-54-83-23-121.compute-1.amazonaws.com
+  post: 5432
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: postgres
-  password: postgres
+  # username: postgres
+  username: zidpthrwebvsrd
+  # password: postgres
+  password: 842ceef9a8ddb31885930dc5c94399a7899db57a117fb20cac1cb608e117060b
+  database: d6ggf12876ooko
   
 development:
   <<: *default
-  database: blog-postgre_development
+  # database: blog-postgre_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
